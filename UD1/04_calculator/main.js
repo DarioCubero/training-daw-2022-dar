@@ -6,8 +6,31 @@
 
 
 // define variables
-let x, y;
+let x = 1, y = 2;
 
+function suma(x, y) {
+    resultado = x + y;
+        return resultado;
+}
+
+function resta(x, y) {
+    resultado = x - y;
+        return resultado;
+}
+
+function multiplicacion(x, y) {
+    resultado = x * y;
+        return resultado;
+}
+
+function division(x, y) {
+    resultado = x / y;
+        return resultado;
+}
 
 // print sum, substract, multiply and divide
-console.log('something')
+console.log("suma: " + suma(x,y));
+console.log("resta: " + resta(x,y));
+console.log("multiplicacion: " + multiplicacion(x,y));
+console.log("division: " + division(x,y));
+

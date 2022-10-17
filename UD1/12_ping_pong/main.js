@@ -1,8 +1,18 @@
-function pingPong() {
-
+function pingPong(index) {
+    if (index % 5 == 0 && index % 10 != 0) {
+        console.log(index + "...PING");
+    }else if (index % 10 == 0){
+        console.log(index + "...PONG");
+    }else{
+        console.log(index);
+    }
 }
 
-pingPong()
+for (let index = 0; index < 100; index++) {
+    pingPong(index)
+    
+}
+
 // expected output
 // 1
 // 2

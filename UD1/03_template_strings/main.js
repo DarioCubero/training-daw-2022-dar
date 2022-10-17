@@ -1,4 +1,5 @@
 function hello(name, lastname, years) {
+    return(`Hola $(name) $(lastname) tienes $(years)`);
 }
 
 let result = hello('John', 'Anderton', 35)
@@ -12,5 +13,3 @@ if (result != "Hola John Foo, tienes 47 años de edad") {
     console.log('test fail')
     return
 }
-
-console.log('Test OK')

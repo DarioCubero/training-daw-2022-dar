@@ -1,8 +1,20 @@
 function printMultiplicationTables() {
-
+    let array = "";
+    console.log("\t1\t2\t3\t4\t5\t6\t7\t8\t9\t10");
+    
+    for(let i=1; i<11; i++) {
+        array = `${i}\t`;
+         for(let n=1; n<11; n++){
+            array+= `${i*n}\t`;
+        }
+        console.log(array);
+    }
 }
 
+
 printMultiplicationTables()
+
+
 // expected output
 //     1   2   3   ...
 // 1   1   2   3   ...
