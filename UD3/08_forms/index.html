@@ -15,7 +15,6 @@
             <input type="radio" value="no" name="pregunta" id="pregunta_no">NO</input>
             <input type="radio" value="nsnc" name="pregunta" id="pregunta_nsnc">NS/NC</input>
         </p>
-
         <p>
             <select id="opciones" name="opciones">
                 <option value="1">Primer valor</option>
@@ -24,7 +23,6 @@
                 <option value="4">Cuarto valor</option>
             </select>
         </p>
-
         <p>
             <label for="name">Nombre: </label>
             <input type="text" name="name"></input>
@@ -33,12 +31,11 @@
             <label for="description">Descripción: </label>
             <textarea type="textarea" name="description"></textarea>
         </p>
-
+        
         <p>
-            <input type="checkbox" value="condiciones" name="condiciones" id="condiciones">He leído y acepto las condiciones</input>
-            <input type="checkbox" value="privacidad" name="privacidad" id="privacidad">He leído la política de privacidad</input>
+        <input onclick="checkCheckbox()" type="checkbox" value="condiciones" name="condiciones" id="condiciones">He leído y acepto las condiciones</input>
+        <input onclick="checkCheckbox()" type="checkbox" value="privacidad" name="privacidad" id="privacidad">He leído la política de privacidad</input>
         </p>
-
         <p>
             <button id="submit">Enviar</button>
         </p>

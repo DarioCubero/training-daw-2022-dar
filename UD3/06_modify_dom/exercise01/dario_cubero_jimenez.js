@@ -21,4 +21,5 @@ window.onload = function(e) {
 
     // Cambiar el color de los elementos buttons dentro de class == buttons
     console.log(document.querySelectorAll(".buttons button").forEach(x => x.style.backgroundColor = "Magenta"));
+
 }
