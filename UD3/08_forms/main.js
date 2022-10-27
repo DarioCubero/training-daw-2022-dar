@@ -4,7 +4,6 @@
 // El tamaño máximo de la descripción es de 80 carácteres
 // Implementar algún mecanismo para prevenir el doble submit
 
-
 window.onload = function() {
     checkCheckbox(); //Realiza una comprobación antes de comenzar
     // console.log(document.main_form.elements) //Muestra todos los elementos del formulario
@@ -13,10 +12,19 @@ window.onload = function() {
     // document.getElementById('pregunta_nsnc').onchange = showValue
 }
 
+function checkForm(form)
+{
+  //
+  // validate form fields
+  //
+  ocument.getElementById("submit").disabled = true;
+  return true;
+}
 
 function checkRadio(){
     let statusYes = document.getElementById("pregunta_si").checked;
-    console.log(statusYes);
+    let comboOpciones = document.getElementById("opciones");
+    statusYes ? comboOpciones.disabled = false : comboOpciones.disabled = true;
 }
 
 function checkCheckbox(){

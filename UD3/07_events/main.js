@@ -4,9 +4,7 @@
 // Completar el resto de enlaces de la página para que su comportamiento sea idéntico al del primer enlace
 // Cuando una sección se oculte, debe cambiar el mensaje del enlace asociado (pista: propiedad innerHTML)
 
-
-window.onload = function(e) {
-}
+window.onload = function (e) {};
 
 // function myOnClick(enlace, contenido){
 //     let status = document.getElementById(contenido).style.display;
@@ -20,16 +18,15 @@ window.onload = function(e) {
 //     }
 // }
 
-function showHide(num){
-    let contenido = document.getElementById(`contenidos_${num}`);
-    let enlace = document.getElementById(`enlace_${num}`);
+function showHide(num) {
+  let contenido = document.getElementById(`contenidos_${num}`);
+  let enlace = document.getElementById(`enlace_${num}`);
 
-    if (contenido.style.display === "block"){
-        contenido.style.display = "none";   
-        enlace.innerText = "Mostrar texto";
-    }
-    else{
-        contenido.style.display = "block";
-        enlace.innerText = "Ocultar texto";
-    }
+  if (contenido.style.display === "block") {
+    contenido.style.display = "none";
+    enlace.innerText = "Mostrar texto";
+  } else {
+    contenido.style.display = "block";
+    enlace.innerText = "Ocultar texto";
+  }
 }
